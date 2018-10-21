@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="fr" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=David+Libre|Hind:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+   
+  <title>Comparateur de fonds</title>
+</head>
+<body>
+<header class="cd-auto-hide-header">
+  <div class="logo"></br></br>FindMyFund</div>
+
+  <nav class="cd-primary-nav">
+    <a href="#cd-navigation" class="nav-trigger">
+      <span>
+        <em aria-hidden="true"></em>
+        Menu
+      </span>
+    </a> <!-- .nav-trigger -->
+
+    <ul id="cd-navigation">
+      <li><a href=produit.html>Notre produit</a></li>
+      <li><a href=mission.html>Notre mission</a></li>
+      <li><a href="equipe.html">L'équipe</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav> <!-- .cd-primary-nav -->
+
+
+</header> <!-- .cd-auto-hide-header -->
+
+<main>
+  <div class="simu_form"></br></br></br>
+      <form method="post" action="traitement.php">
+            Vous êtes</br>
+              <input type="radio" name="statut" value="celibataire" id="celibataire" /><label for="celibataire">Célibataire</label>
+            </br>
+              <input type="radio" name="statut" value="marie" id="marie" /><label for="marie">Marié(e)</label>
+            </br>
+              <input type="radio" name="statut" value="pacse" id="pacse" /><label for="pacse">Pacsé(e)</label>
+            </br>
+              <input type="radio" name="statut" value="union" id="union" /><label for="union">Union libre</label>
+            </br>
+              <input type="radio" name="statut" value="veuf" id="veuf" /><label for="veuf">Veuf(ve)</label>
+            </br>
+            <label>Votre âge</label></br>
+            <input type="date" name="age" id="age" placeholder="12/03/1993" />
+            </br>
+
+            <label for="profil_risque">Votre profil de risque</label>
+              </br>
+              <select name="profil_risque" id="profil_risque">
+                <option value="prudent">Prudent</option>
+                <option value="modere">Modéré</option>
+                <option value="offensif">Offensif</option>
+              </select>
+              </br>
+              
+            <label class="input-statut" for="revenu">Vos revenus <b>Mensuels Nets</b></label>
+              </br>
+            <input type="number" name="revenu" id="revenu" min="800" max="99999" step=200>
+
+
+          
+      </form>
+  </div>
+</main> <!-- .cd-main-content -->
+
+<footer>
+  <p>Créé le 20/10</p>
+  <p>Par Pierre-Henri Janssens</p>
+  <p>Information : <a class="footer-a"   href="mailto:janssens.pierrehenri@gmail.com">
+  janssens.pierrehenri@gmail.com</a></p>
+</footer>
+ 
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+  if( !window.jQuery ) document.write('<script src="js/jsquery-3.0.0.min.js"><\/script>');
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
